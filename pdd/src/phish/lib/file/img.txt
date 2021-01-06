@@ -1,0 +1,3 @@
+https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png
+https://www.google.com/tia/tia.png
+https://www.gstatic.com/ui/v1/activityindicator/loading_24.gif

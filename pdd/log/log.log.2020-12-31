@@ -1,0 +1,6 @@
+2021-01-02 17:16:12,975 - INFO - domain_parser.parse() is running
+2021-01-02 17:16:13,094 - DEBUG - class labels must be entered one of (phish, legitimate)
+2021-01-02 17:16:13,094 - INFO - Domain Parse process is done 1 unique URLs are parsed
+2021-01-02 17:16:13,120 - INFO - parse Dosyaya Yazıldı.
+2021-01-02 17:16:13,120 - INFO - rule_extraction.extraction() is running
+2021-01-02 17:16:23,674 - INFO - features Dosyaya Yazıldı.

@@ -1,0 +1,5 @@
+2021-01-06 08:28:24,181 - INFO - domain_parser.parse() is running
+2021-01-06 08:28:24,340 - INFO - domain_parser.parse() is running
+2021-01-06 08:28:24,421 - INFO - Domain Parse process is done 4001 unique URLs are parsed
+2021-01-06 08:28:24,470 - INFO - parse Dosyaya Yazıldı.
+2021-01-06 08:28:24,470 - INFO - rule_extraction.extraction() is running

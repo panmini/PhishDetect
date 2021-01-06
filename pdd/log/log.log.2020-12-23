@@ -1,0 +1,16 @@
+2020-12-24 10:57:41,706 - INFO - domain_parser.parse() is running
+2020-12-24 10:57:42,975 - DEBUG - class labels must be entered one of (phish, legitimate)
+2020-12-24 10:57:42,975 - INFO - Domain Parse process is done 36400 unique URLs are parsed
+2020-12-24 10:57:43,266 - INFO - parse Dosyaya Yazıldı.
+2020-12-24 10:57:43,266 - INFO - rule_extraction.extraction() is running
+2020-12-24 11:02:45,181 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Trash/pdd/src/rule_extraction.py", line 76, in extraction
+    Parallel(n_jobs=-1)(delayed(self.thread_extraction(line, domain_features))(line) for line in tqdm(parsed_domains))
+  File "/home/mo/.local/lib/python3.9/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/home/mo/.local/lib/python3.9/site-packages/joblib/parallel.py", line 928, in retrieve
+    with self._lock:
+KeyboardInterrupt
+
+2020-12-24 11:02:45,332 - INFO - features Dosyaya Yazıldı.
+2020-12-24 11:02:45,366 - INFO - arff Dosyaya Yazıldı.

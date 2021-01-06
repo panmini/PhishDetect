@@ -1,0 +1,5 @@
+2020-12-23 02:17:41,803 - DEBUG - class labels must be entered one of (phish, legitimate)
+2020-12-23 02:17:41,855 - INFO - Domain Parse process is done 0 unique URLs are parsed
+2020-12-23 02:17:41,855 - INFO - parse Dosyaya Yazıldı.
+2020-12-23 02:17:41,855 - INFO - rule_extraction.extraction() is running
+2020-12-23 02:17:41,883 - INFO - features Dosyaya Yazıldı.

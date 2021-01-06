@@ -1,0 +1,11 @@
+2021-01-05 16:20:45,680 - INFO - domain_parser.parse() is running
+2021-01-05 16:20:45,759 - ERROR - an error is occurred  : Traceback (most recent call last):
+  File "train.py", line 45, in domain_parser
+    dataset = self.txt_to_list(open("{0}{1}".format(self.path_input, param[i]), "r"))  # txt read
+FileNotFoundError: [Errno 2] No such file or directory: '../input/../data/dl1_4'
+
+2021-01-05 16:20:45,759 - DEBUG - an error occurred when | ['train.py', '../data/dp1.txt', 'phish', '../data/dl1_4', 'legitimate'].txt | file was processing
+2021-01-05 16:20:45,759 - INFO - Domain Parse process is done 1 unique URLs are parsed
+2021-01-05 16:20:45,759 - INFO - parse Dosyaya Yazıldı.
+2021-01-05 16:20:45,759 - INFO - rule_extraction.extraction() is running
+2021-01-05 16:20:56,850 - INFO - features Dosyaya Yazıldı.
