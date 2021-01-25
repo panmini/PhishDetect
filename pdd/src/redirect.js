@@ -8,7 +8,7 @@ const args = process.argv.slice(2);
 //var url = 'https://segurocombeneficiosresgate.club/promocao/descontao/card/home.php'
 var url = 'http://souvenirsplace.com/chuakad.php'
 
-//var url = args[0];
+var url = args[0];
 
 var fs = require('fs');
 var util = require('util');
