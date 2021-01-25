@@ -1,6 +1,7 @@
 from urllib import parse
 from dns import resolver, reversename
 from datetime import datetime
+from domain_parser import domain_parser
 from bs4 import BeautifulSoup
 from rblwatch import RBLSearch
 from random import choice
@@ -131,7 +132,6 @@ def getmld(url):
     info = parse_url(url)
     mld = info.domain
     return mld
-
 
 
 def main(URL):

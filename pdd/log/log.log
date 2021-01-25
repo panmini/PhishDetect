@@ -1,15 +1,1601 @@
-2021-01-06 08:28:24,181 - INFO - domain_parser.parse() is running
-2021-01-06 08:28:24,340 - INFO - domain_parser.parse() is running
-2021-01-06 08:28:24,421 - INFO - Domain Parse process is done 4001 unique URLs are parsed
-2021-01-06 08:28:24,470 - INFO - parse Dosyaya Yazıldı.
-2021-01-06 08:28:24,470 - INFO - rule_extraction.extraction() is running
-2021-01-06 08:44:48,850 - INFO - domain_parser.parse() is running
-2021-01-06 08:44:48,850 - INFO - domain_parser.parse() is running
-2021-01-06 08:44:48,929 - INFO - domain_parser.parse() is running
-2021-01-06 08:44:48,929 - INFO - domain_parser.parse() is running
-2021-01-06 08:44:49,118 - INFO - Domain Parse process is done 4001 unique URLs are parsed
-2021-01-06 08:44:49,118 - INFO - Domain Parse process is done 4001 unique URLs are parsed
-2021-01-06 08:44:49,165 - INFO - parse Dosyaya Yazıldı.
-2021-01-06 08:44:49,165 - INFO - parse Dosyaya Yazıldı.
-2021-01-06 08:44:49,166 - INFO - rule_extraction.extraction() is running
-2021-01-06 08:44:49,166 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:31:47,530 - INFO - domain_parser.parse() is running
+2021-01-25 17:31:48,035 - INFO - domain_parser.parse() is running
+2021-01-25 17:31:48,383 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:31:48,549 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:31:48,549 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:32:05,268 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 122, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:32:23,131 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 118, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:32:30,515 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:32:30,516 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:32:30,517 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:38:40,414 - INFO - domain_parser.parse() is running
+2021-01-25 17:38:40,414 - INFO - domain_parser.parse() is running
+2021-01-25 17:38:40,857 - INFO - domain_parser.parse() is running
+2021-01-25 17:38:40,857 - INFO - domain_parser.parse() is running
+2021-01-25 17:38:41,111 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:38:41,111 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:38:41,273 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:38:41,273 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:38:41,273 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:38:41,273 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:38:48,922 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 119, in phish_rules_main
+    test = phish_extraction(url, driver)
+NameError: name 'phish_extraction' is not defined
+
+2021-01-25 17:38:48,922 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 119, in phish_rules_main
+    test = phish_extraction(url, driver)
+NameError: name 'phish_extraction' is not defined
+
+2021-01-25 17:38:57,780 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+NameError: name 'phish_extraction' is not defined
+
+2021-01-25 17:38:57,780 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+NameError: name 'phish_extraction' is not defined
+
+2021-01-25 17:39:00,775 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:39:00,775 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:39:00,777 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:39:00,777 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:39:00,778 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:39:00,778 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:52:28,061 - INFO - domain_parser.parse() is running
+2021-01-25 17:52:28,061 - INFO - domain_parser.parse() is running
+2021-01-25 17:52:28,500 - INFO - domain_parser.parse() is running
+2021-01-25 17:52:28,500 - INFO - domain_parser.parse() is running
+2021-01-25 17:52:28,756 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:52:28,756 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:52:28,920 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:52:28,920 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:52:28,920 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:52:28,920 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:52:40,799 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:52:40,799 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:52:57,060 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:52:57,060 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:52:59,654 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:52:59,654 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:52:59,655 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:52:59,655 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:52:59,655 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:52:59,655 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:54:19,108 - INFO - domain_parser.parse() is running
+2021-01-25 17:54:19,108 - INFO - domain_parser.parse() is running
+2021-01-25 17:54:19,554 - INFO - domain_parser.parse() is running
+2021-01-25 17:54:19,554 - INFO - domain_parser.parse() is running
+2021-01-25 17:54:19,810 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:54:19,810 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 17:54:19,972 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:54:19,972 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 17:54:19,972 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:54:19,972 - INFO - rule_extraction.extraction() is running
+2021-01-25 17:54:32,682 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:54:32,682 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:54:48,697 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:54:48,697 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 17:54:52,238 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:54:52,238 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 17:54:52,239 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:54:52,239 - INFO - features Dosyaya Yazıldı.
+2021-01-25 17:54:52,239 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 17:54:52,239 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:24:38,972 - INFO - domain_parser.parse() is running
+2021-01-25 18:24:38,972 - INFO - domain_parser.parse() is running
+2021-01-25 18:24:39,459 - INFO - domain_parser.parse() is running
+2021-01-25 18:24:39,459 - INFO - domain_parser.parse() is running
+2021-01-25 18:24:39,746 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:24:39,746 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:24:39,924 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:24:39,924 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:24:39,924 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:24:39,924 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:24:55,620 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 18:24:55,620 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 121, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 18:24:59,907 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:24:59,907 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:24:59,908 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:24:59,908 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:24:59,908 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:24:59,908 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:47:03,339 - INFO - domain_parser.parse() is running
+2021-01-25 18:47:03,339 - INFO - domain_parser.parse() is running
+2021-01-25 18:47:03,779 - INFO - domain_parser.parse() is running
+2021-01-25 18:47:03,779 - INFO - domain_parser.parse() is running
+2021-01-25 18:47:04,038 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:47:04,038 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:47:04,201 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:47:04,201 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:47:04,201 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:47:04,201 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:47:32,429 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:47:32,429 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:47:32,429 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:47:32,429 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:47:32,430 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:47:32,430 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:49:32,602 - INFO - domain_parser.parse() is running
+2021-01-25 18:49:32,602 - INFO - domain_parser.parse() is running
+2021-01-25 18:49:33,045 - INFO - domain_parser.parse() is running
+2021-01-25 18:49:33,045 - INFO - domain_parser.parse() is running
+2021-01-25 18:49:33,299 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:49:33,299 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:49:33,465 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:49:33,465 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:49:33,465 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:49:33,465 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:50:32,358 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 119, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 112, in web_scrapping
+    href.append(lnk.get_attribute("href"))
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 139, in get_attribute
+    attributeValue = self.parent.execute_script(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:50:32,358 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 119, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 112, in web_scrapping
+    href.append(lnk.get_attribute("href"))
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 139, in get_attribute
+    attributeValue = self.parent.execute_script(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:50:33,400 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:50:33,400 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:50:33,401 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:50:33,401 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:50:33,401 - DEBUG - Arffe çevrilen sample da hata :
+{'info': {'url': 'http://www.webopedia.com/TERM/L/local_area_network_LAN.html', 'domain': 'webopedia', 'registered_domain': 'webopedia.com', 'tld': 'com', 'subdomain': 'www', 'class': 'legitimate', 'id': 2, 'protocol': 'http', 'path': '/TERM/L/local_area_network_LAN.html', 'nlp_info': {'words_raw': ['webopedia', 'term', 'l', 'local', 'area', 'network', 'lan', 'html', 'www']}}, 'url_features': {'domain_digit_count': 0, 'subdomain_digit_count': 0, 'path_digit_count': 0, 'domain_length': 9, 'subdomain_length': 3, 'path_length': 35, 'isKnownTld': 1, 'www': 1, 'com': 0, 'punnyCode': 0, 'random_domain': 0, 'subDomainCount': 1, 'char_repeat': 3, 'alexa1m_tld': 1, 'alexa1m': 1, '-': 0, '.': 1, '/': 3, '@': 0, '?': 0, '&': 0, '=': 0, '_': 3, 'domain_in_brand_list': 0}}
+2021-01-25 18:50:33,401 - DEBUG - Arffe çevrilen sample da hata :
+{'info': {'url': 'http://www.webopedia.com/TERM/L/local_area_network_LAN.html', 'domain': 'webopedia', 'registered_domain': 'webopedia.com', 'tld': 'com', 'subdomain': 'www', 'class': 'legitimate', 'id': 2, 'protocol': 'http', 'path': '/TERM/L/local_area_network_LAN.html', 'nlp_info': {'words_raw': ['webopedia', 'term', 'l', 'local', 'area', 'network', 'lan', 'html', 'www']}}, 'url_features': {'domain_digit_count': 0, 'subdomain_digit_count': 0, 'path_digit_count': 0, 'domain_length': 9, 'subdomain_length': 3, 'path_length': 35, 'isKnownTld': 1, 'www': 1, 'com': 0, 'punnyCode': 0, 'random_domain': 0, 'subDomainCount': 1, 'char_repeat': 3, 'alexa1m_tld': 1, 'alexa1m': 1, '-': 0, '.': 1, '/': 3, '@': 0, '?': 0, '&': 0, '=': 0, '_': 3, 'domain_in_brand_list': 0}}
+2021-01-25 18:50:33,402 - ERROR - Error Arff Body : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/json2arff.py", line 48, in convert_for_train
+    tmp = tmp + str(each_domain['url_features'][key])+","
+KeyError: 'raw_word_count'
+
+2021-01-25 18:50:33,402 - ERROR - Error Arff Body : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/json2arff.py", line 48, in convert_for_train
+    tmp = tmp + str(each_domain['url_features'][key])+","
+KeyError: 'raw_word_count'
+
+2021-01-25 18:50:33,402 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:50:33,402 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:54:46,320 - INFO - domain_parser.parse() is running
+2021-01-25 18:54:46,320 - INFO - domain_parser.parse() is running
+2021-01-25 18:54:46,781 - INFO - domain_parser.parse() is running
+2021-01-25 18:54:46,781 - INFO - domain_parser.parse() is running
+2021-01-25 18:54:47,046 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:54:47,046 - INFO - Domain Parse process is done 25797 unique URLs are parsed
+2021-01-25 18:54:47,215 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:54:47,215 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:54:47,215 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:54:47,215 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:55:18,219 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:55:18,219 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:55:46,645 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:55:46,645 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:56:07,658 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:56:07,658 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:56:08,117 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 18:56:08,117 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 18:56:08,119 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:56:08,119 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:56:08,120 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:56:08,120 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:57:15,727 - INFO - domain_parser.parse() is running
+2021-01-25 18:57:15,727 - INFO - domain_parser.parse() is running
+2021-01-25 18:57:15,747 - INFO - domain_parser.parse() is running
+2021-01-25 18:57:15,747 - INFO - domain_parser.parse() is running
+2021-01-25 18:57:16,024 - INFO - Domain Parse process is done 9801 unique URLs are parsed
+2021-01-25 18:57:16,024 - INFO - Domain Parse process is done 9801 unique URLs are parsed
+2021-01-25 18:57:16,094 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:57:16,094 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:57:16,094 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:57:16,094 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:57:48,707 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:57:48,707 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:57:50,983 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:57:50,983 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:57:50,983 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:57:50,983 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:57:50,984 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:57:50,984 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:58:29,466 - INFO - domain_parser.parse() is running
+2021-01-25 18:58:29,466 - INFO - domain_parser.parse() is running
+2021-01-25 18:58:29,486 - INFO - domain_parser.parse() is running
+2021-01-25 18:58:29,486 - INFO - domain_parser.parse() is running
+2021-01-25 18:58:29,767 - INFO - Domain Parse process is done 9799 unique URLs are parsed
+2021-01-25 18:58:29,767 - INFO - Domain Parse process is done 9799 unique URLs are parsed
+2021-01-25 18:58:29,832 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:58:29,832 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:58:29,832 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:58:29,832 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:58:52,677 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:58:52,677 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:59:19,836 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:59:19,836 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 18:59:36,265 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:59:36,265 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 47, in thread_extraction
+    driver.get(line['url'])
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 18:59:36,266 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:59:36,266 - INFO - features Dosyaya Yazıldı.
+2021-01-25 18:59:36,266 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:59:36,266 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 18:59:51,582 - INFO - domain_parser.parse() is running
+2021-01-25 18:59:51,582 - INFO - domain_parser.parse() is running
+2021-01-25 18:59:51,602 - INFO - domain_parser.parse() is running
+2021-01-25 18:59:51,602 - INFO - domain_parser.parse() is running
+2021-01-25 18:59:51,602 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 18:59:51,602 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 18:59:51,602 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:59:51,602 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 18:59:51,603 - INFO - rule_extraction.extraction() is running
+2021-01-25 18:59:51,603 - INFO - rule_extraction.extraction() is running
+2021-01-25 19:00:14,408 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 19:00:14,408 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 19:00:38,476 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 19:00:38,476 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//itaacesslinkregulari-com.umbler.net/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20itaacesslinkregulari-com.umbler.net.
+
+
+2021-01-25 19:00:50,618 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:00:50,618 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 112, in phish_rules_main
+    from extractor import phish_extraction
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 407, in <module>
+    driver.get(url)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:00:51,352 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 19:00:51,352 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 19:00:51,352 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:00:51,352 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:00:51,353 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 19:00:51,353 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 19:01:36,894 - INFO - domain_parser.parse() is running
+2021-01-25 19:01:36,894 - INFO - domain_parser.parse() is running
+2021-01-25 19:01:36,911 - INFO - domain_parser.parse() is running
+2021-01-25 19:01:36,911 - INFO - domain_parser.parse() is running
+2021-01-25 19:01:36,912 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 19:01:36,912 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 19:01:36,912 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 19:01:36,912 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 19:01:36,912 - INFO - rule_extraction.extraction() is running
+2021-01-25 19:01:36,912 - INFO - rule_extraction.extraction() is running
+2021-01-25 19:01:48,441 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 19:01:48,441 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 117, in phish_rules_main
+    features.update(test)
+TypeError: 'bool' object is not iterable
+
+2021-01-25 19:02:23,815 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 90, in web_scrapping
+    output = proc.stdout.read().decode('utf-8')
+KeyboardInterrupt
+
+2021-01-25 19:02:23,815 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 90, in web_scrapping
+    output = proc.stdout.read().decode('utf-8')
+KeyboardInterrupt
+
+2021-01-25 19:02:24,424 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 19:02:24,424 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+
+2021-01-25 19:02:24,425 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:02:24,425 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:02:24,426 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 19:02:24,426 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 19:05:41,339 - INFO - domain_parser.parse() is running
+2021-01-25 19:05:41,339 - INFO - domain_parser.parse() is running
+2021-01-25 19:05:41,357 - INFO - domain_parser.parse() is running
+2021-01-25 19:05:41,357 - INFO - domain_parser.parse() is running
+2021-01-25 19:05:41,357 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 19:05:41,357 - INFO - Domain Parse process is done 4 unique URLs are parsed
+2021-01-25 19:05:41,357 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 19:05:41,357 - INFO - parse Dosyaya Yazıldı.
+2021-01-25 19:05:41,358 - INFO - rule_extraction.extraction() is running
+2021-01-25 19:05:41,358 - INFO - rule_extraction.extraction() is running
+2021-01-25 19:06:30,693 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 111, in web_scrapping
+    if lnk.get_attribute("href") is not None:
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 139, in get_attribute
+    attributeValue = self.parent.execute_script(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:06:30,693 - ERROR - url_rules.main() Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/url_rules.py", line 115, in phish_rules_main
+    test = phish_extraction(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/extractor.py", line 117, in phish_extraction
+    chain, logged, href, img, iframe, _input, title, text, flag = web_scrapping(url, driver)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/webscrapper.py", line 111, in web_scrapping
+    if lnk.get_attribute("href") is not None:
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 139, in get_attribute
+    attributeValue = self.parent.execute_script(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:06:31,715 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:06:31,715 - ERROR - Error : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 106, in extraction
+    flag = self.thread_extraction(line, domain_features)
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/rule_extraction.py", line 39, in thread_extraction
+    driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py", line 170, in __init__
+    RemoteWebDriver.__init__(
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mo/.local/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+2021-01-25 19:06:31,718 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:06:31,718 - INFO - features Dosyaya Yazıldı.
+2021-01-25 19:06:31,721 - DEBUG - Arffe çevrilen sample da hata :
+{'info': {'url': 'https://en.m.wikipedia.org/wiki/Nevus_flammeus', 'domain': 'wikipedia', 'registered_domain': 'wikipedia.org', 'tld': 'org', 'subdomain': 'en.m', 'class': 'phish', 'id': 2, 'protocol': 'https', 'path': '/wiki/Nevus_flammeus', 'nlp_info': {'words_raw': ['wikipedia', 'wiki', 'nevus', 'flammeus', 'en', 'm']}}, 'url_features': {'domain_digit_count': 0, 'subdomain_digit_count': 0, 'path_digit_count': 0, 'domain_length': 9, 'subdomain_length': 4, 'path_length': 20, 'isKnownTld': 1, 'www': 0, 'com': 0, 'punnyCode': 0, 'random_domain': 0, 'subDomainCount': 2, 'char_repeat': 1, 'alexa1m_tld': 1, 'alexa1m': 1, '-': 0, '.': 1, '/': 2, '@': 0, '?': 0, '&': 0, '=': 0, '_': 1, 'domain_in_brand_list': 1}}
+2021-01-25 19:06:31,721 - DEBUG - Arffe çevrilen sample da hata :
+{'info': {'url': 'https://en.m.wikipedia.org/wiki/Nevus_flammeus', 'domain': 'wikipedia', 'registered_domain': 'wikipedia.org', 'tld': 'org', 'subdomain': 'en.m', 'class': 'phish', 'id': 2, 'protocol': 'https', 'path': '/wiki/Nevus_flammeus', 'nlp_info': {'words_raw': ['wikipedia', 'wiki', 'nevus', 'flammeus', 'en', 'm']}}, 'url_features': {'domain_digit_count': 0, 'subdomain_digit_count': 0, 'path_digit_count': 0, 'domain_length': 9, 'subdomain_length': 4, 'path_length': 20, 'isKnownTld': 1, 'www': 0, 'com': 0, 'punnyCode': 0, 'random_domain': 0, 'subDomainCount': 2, 'char_repeat': 1, 'alexa1m_tld': 1, 'alexa1m': 1, '-': 0, '.': 1, '/': 2, '@': 0, '?': 0, '&': 0, '=': 0, '_': 1, 'domain_in_brand_list': 1}}
+2021-01-25 19:06:31,722 - ERROR - Error Arff Body : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/json2arff.py", line 48, in convert_for_train
+    tmp = tmp + str(each_domain['url_features'][key])+","
+KeyError: '0'
+
+2021-01-25 19:06:31,722 - ERROR - Error Arff Body : Traceback (most recent call last):
+  File "/home/mo/Downloads/Project/PhishDetect/pdd/src/json2arff.py", line 48, in convert_for_train
+    tmp = tmp + str(each_domain['url_features'][key])+","
+KeyError: '0'
+
+2021-01-25 19:06:31,723 - INFO - arff Dosyaya Yazıldı.
+2021-01-25 19:06:31,723 - INFO - arff Dosyaya Yazıldı.

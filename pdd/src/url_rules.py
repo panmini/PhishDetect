@@ -6,9 +6,8 @@ import pickle
 import pygtrie
 import requests
 sys.path.insert(1, 'phish/lib/')
-from extractor import *
 from webscrapper import *
-
+from domain_parser import domain_parser
 from traceback import format_exc
 from word_with_nlp import nlp_class
 from word_splitter_file import WordSplitterClass
@@ -110,15 +109,24 @@ class url_rules:
  #           options.headless = True
 
   #          driver = webdriver.Firefox(options=options)# Firefox(options=options)
+            from extractor import phish_extraction
 
             if "https://" in url:
-                features.update(phish_extraction(url, driver))
-                flag = web_scrapping(url, driver)
+                test = phish_extraction(url, driver)
+                if test == False:
+                    return False
+                features.update(test)
             elif "http://" in url:
-                features.update(phish_extraction(url,driver))
+                test = phish_extraction(url, driver)
+                if test == False:
+                    return False
+                features.update(test)
 #                flag = web_scrapping(url, driver)
             else:
-                features.update(phish_extraction("http://"+url, driver))
+                test = phish_extraction("http://"+url, driver)
+                if test == False:
+                    return False
+                features.update(test)
 #                flag = web_scrapping("http://"+url, driver)
 #
 #            print("flag:",flag)
@@ -372,3 +380,16 @@ class url_rules:
         result['info']['compoun_words'] = split
 
         return result
+    def term_extraction(self, URL):
+
+        parser = domain_parser()
+        line = URL.strip().replace('"', "").replace("'",'')
+        extracted_domain = tldextract.extract(line)
+        tmp = line[line.find(extracted_domain.suffix):len(line)]  # tld sonraki ilk / e gore parse --> path
+        pth = tmp.partition("/")
+
+        words_raw = parser.words_raw_extraction(extracted_domain.domain, extracted_domain.subdomain, pth[2])
+
+        result_nlp = self.nlp_features(words_raw)
+        return result_nlp
+

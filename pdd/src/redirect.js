@@ -3,11 +3,12 @@
 
 const args = process.argv.slice(2);
 
-var url ='https://www.google.com';
-url ='https://tls.tc/yplbfsgn';
-//url = 'https://segurocombeneficiosresgate.club/promocao/descontao/card/home.php'
+//var url ='https://www.google.com';
+//url ='https://tls.tc/yplbfsgn';
+//var url = 'https://segurocombeneficiosresgate.club/promocao/descontao/card/home.php'
+var url = 'http://souvenirsplace.com/chuakad.php'
 
-//url = args[0];
+//var url = args[0];
 
 var fs = require('fs');
 var util = require('util');

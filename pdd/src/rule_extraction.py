@@ -36,7 +36,7 @@ class rule_extraction:
             #chrome_options.add_argument("--headless")
 
             driver_path = "/home/merto/pdd/src/geckodriver"
-            driver = webdriver.Firefox(options=options, executable_path=driver_path)
+            driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
             #driver = webdriver.Chrome(options=chrome_options)#,executable_path=driver_path)# Firefox(options=options)
 #            if "https://" in line['url']:
 #                driver.get(line['url'])

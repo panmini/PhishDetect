@@ -56,12 +56,13 @@ class domain_parser(object):
 
         for line in tqdm(domain_list):
             domain = {}
+            line = line.strip().replace('"', "").replace("'",'')
 
             extracted_domain = tldextract.extract(line)
 
             registered_domain_lst.append(extracted_domain.registered_domain)
 
-            domain['url'] = line.strip()
+            domain['url'] = line#.strip()
             domain['domain'] = extracted_domain.domain
             domain['registered_domain'] = extracted_domain.registered_domain
             domain['tld'] = extracted_domain.suffix
