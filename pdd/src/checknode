@@ -1,0 +1,7 @@
+#!/bin/sh
+while true
+do
+        #This code take node process id and check if runtime is over 30second. If yes kill the node process. 
+        kill -9 $(echo $(pidof node | awk '{print $1}') $(ps -p $(pidof node | awk '{print $1}') -o etimes= ) | awk '$2 > 30 {print $1 }') > /dev/null 2>&1
+        sleep 5
+done
