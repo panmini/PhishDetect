@@ -58,42 +58,47 @@ def mean_median_stdev(feature_1, data):
 
 def f1_3_8feature(feature_1, links):
 
-    list_dl             =[]
-    list_len_mld        =[]
-    list_len_fqdn       =[]
-    list_rdn            =[]
-    list_nlp            =[]
 #    list_c_url          =[]
+    #links = ["https://www.google.com/", "https://www.google.com/", "https://www.google.com/"]
 #    list_c_mld          =[]
-    for data in links:
-        rules = term_extraction(data)['features']
-        url = start_url(data)
-        info = parse_url(data)
-        term = str(info.fqdn) + str(url['path'] )+ str(url['query'])
-        list_dl.append(count_ld(url['host']))
-        list_len_mld.append(len(info.domain))
-        list_len_fqdn.append(len(info.fqdn))
-        list_rdn.append(len(info.registered_domain))
+    if len(links) > 1:
+        list_dl             =[]
+        list_len_mld        =[]
+        list_len_fqdn       =[]
+        list_rdn            =[]
+        list_nlp            =[]
 
-        #print(len(url_rules_o.term_extraction(URL)['features']))
-        nlp = []
-        for i in rules:
-            nlp.append(rules[i])
-        list_nlp.append(nlp)
-#        list_c_url.append(term_extract(term))
-#        list_c_mld.append(term_extract(info.domain))
-    mean_median_stdev(feature_1, list_dl)
-    mean_median_stdev(feature_1, list_len_mld)
-    mean_median_stdev(feature_1, list_len_fqdn)
-    mean_median_stdev(feature_1, list_rdn)
-    if list_nlp:
-        for i in range(len(list_nlp[0])):
-            calc = []
-            for j in list_nlp:
-                calc.append(j[0])
-            mean_median_stdev(feature_1, calc)
+        for data in links:
+            rules = term_extraction(data)['features']
+            url = start_url(data)
+            info = parse_url(data)
+            term = str(info.fqdn) + str(url['path'] )+ str(url['query'])
+            list_dl.append(count_ld(url['host']))
+            list_len_mld.append(len(info.domain))
+            list_len_fqdn.append(len(info.fqdn))
+            list_rdn.append(len(info.registered_domain))
+
+            #print(rules)
+            nlp = []
+            for i in rules:
+                nlp.append(rules[i])
+            list_nlp.append(nlp)
+    #        list_c_url.append(term_extract(term))
+    #        list_c_mld.append(term_extract(info.domain))
+        mean_median_stdev(feature_1, list_dl)
+        mean_median_stdev(feature_1, list_len_mld)
+        mean_median_stdev(feature_1, list_len_fqdn)
+        mean_median_stdev(feature_1, list_rdn)
+        if list_nlp:
+                calc = []
+                for j in list_nlp:
+                    calc.append(j[1])
+                mean_median_stdev(feature_1, calc)
+        else:
+                mean_median_stdev(feature_1, [0,0])
     else:
-        mean_median_stdev(feature_1, [0,0])
+        for i in range(5):
+            mean_median_stdev(feature_1, [0,0])
 
 
 
