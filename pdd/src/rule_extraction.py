@@ -35,7 +35,7 @@ class rule_extraction:
     #chrome_options.add_argument("--no-sandbox") # linux only
             #chrome_options.add_argument("--headless")
 
-            driver_path = "/home/merto/pdd/src/geckodriver"
+            #driver_path = # geckodriver'ın path'i girilebilir
             driver = webdriver.Firefox(options=options)#, executable_path=driver_path)
             #driver = webdriver.Chrome(options=chrome_options)#,executable_path=driver_path)# Firefox(options=options)
 #            if "https://" in line['url']:
