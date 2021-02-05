@@ -1,0 +1,1 @@
+For start train.py and algorithm.py you need to create "domain_parser" and "test-output" directories under "pdd/output" directory.
